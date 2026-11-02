@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P0.1 Poster Contacts and References</title>
+<style>
+/* Layout: single narrow column for phones; contact card first, then authors, then numbered references. */
+:root{
+  --navy:#103063; --red:#C93B39; --ink:#17233b; --muted:#56627a;
+  --bg:#f3f5f9; --card:#ffffff; --line:#d9dfeb; --tint:#e4effa;
+  --font:Arial,"Helvetica Neue",Helvetica,sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --navy:#9fc3f5; --red:#ff8d8a; --ink:#e8edf7; --muted:#a3aec4;
+    --bg:#0e1626; --card:#162238; --line:#2a3a58; --tint:#1b2d4b; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --navy:#9fc3f5; --red:#ff8d8a; --ink:#e8edf7; --muted:#a3aec4;
+  --bg:#0e1626; --card:#162238; --line:#2a3a58; --tint:#1b2d4b; color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);line-height:1.5;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:20px 16px 48px;display:flex;flex-direction:column;gap:20px}
+header{border-left:6px solid var(--red);padding:4px 0 4px 14px}
+.eyebrow{margin:0 0 6px;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:700}
+h1{margin:0;font-size:24px;line-height:1.25;color:var(--navy);text-wrap:balance}
+h2{margin:0 0 12px;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:var(--red)}
+section{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 18px 20px}
+.people{display:grid;gap:14px}
+@media (min-width:620px){.people{grid-template-columns:1fr 1fr}}
+.person{background:var(--tint);border-radius:10px;padding:14px 16px}
+.role{margin:0 0 2px;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:700}
+.name{margin:0;font-size:18px;font-weight:700;color:var(--navy)}
+.mail{display:inline-block;margin-top:6px;font-size:16px;font-weight:700;color:var(--navy);word-break:break-all}
+.addr{margin:14px 0 0;font-size:15px;color:var(--muted)}
+.authors{margin:0 0 14px;font-size:17px;line-height:1.7;color:var(--ink)}
+.authors .pres{text-decoration:underline;text-underline-offset:3px;font-weight:700}
+.note{margin:0 0 14px;font-size:14px;color:var(--muted);font-style:italic}
+ol.aff{margin:0;padding:0;list-style:none;display:grid;gap:8px;font-size:15px}
+ol.aff li{display:grid;grid-template-columns:22px 1fr;gap:6px}
+ol.aff b{color:var(--red)}
+ol.refs{margin:0;padding-left:30px;display:grid;gap:12px;font-size:15px}
+ol.refs li{padding-left:4px}
+ol.refs li::marker{color:var(--red);font-weight:700}
+a{color:var(--navy);text-underline-offset:3px}
+a:focus-visible{outline:3px solid var(--red);outline-offset:2px;border-radius:2px}
+footer{font-size:13px;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <p class="eyebrow">Critical Care Canada Forum poster</p>
+  <h1>Associations between P0.1, Energy Expenditure, and Clinical Characteristics in Critically Ill Children</h1>
+</header>
+
+<section aria-labelledby="h-contact">
+  <h2 id="h-contact">Contact</h2>
+  <div class="people">
+    <div class="person">
+      <p class="role">Presenting author</p>
+      <p class="name">Idan Yoel</p>
+      <a class="mail" href="mailto:idan.yoel@sickkids.ca">idan.yoel@sickkids.ca</a>
+    </div>
+    <div class="person">
+      <p class="role">Corresponding author</p>
+      <p class="name">Haifa Mtaweh, MD, PhD</p>
+      <a class="mail" href="mailto:haifa.mtaweh@sickkids.ca">haifa.mtaweh@sickkids.ca</a>
+    </div>
+  </div>
+  <p class="addr">The Hospital for Sick Children, Department of Critical Care Medicine, 555 University Ave, Toronto, ON, Canada M5G 1X8</p>
+</section>
+
+<section aria-labelledby="h-authors">
+  <h2 id="h-authors">Authors</h2>
+  <p class="authors"><span class="pres">Idan Yoel</span><sup>*1,2,3</sup>, Keane Fuerte<sup>*1</sup>, Evelyn Chun<sup>1</sup>, Stephanie DeLorenzo<sup>1</sup>, Mikayla Reitsma<sup>1</sup>, Luciana Rodriguez Guerineau<sup>2,3,5</sup>, Christopher Parshuram<sup>1,2,3,4,6</sup>, Haifa Mtaweh<sup>1,2,3,4,6</sup></p>
+  <p class="note">* KF and IY contributed equally to this work.</p>
+  <ol class="aff">
+    <li><b>1</b><span>Division of Paediatric Intensive Care, Department of Critical Care Medicine, The Hospital for Sick Children, Toronto, Ontario, Canada</span></li>
+    <li><b>2</b><span>Department of Pediatrics, University of Toronto, Ontario, Canada</span></li>
+    <li><b>3</b><span>Interdepartmental Division of Critical Care Medicine, University of Toronto, Toronto, Ontario, Canada</span></li>
+    <li><b>4</b><span>Child Health Evaluative Sciences, SickKids Research Institute, Toronto, Ontario, Canada</span></li>
+    <li><b>5</b><span>Division of Cardiac Intensive Care, Department of Critical Care Medicine, The Hospital for Sick Children, Toronto, Ontario, Canada</span></li>
+    <li><b>6</b><span>Institute of Health Policy, Management, and Evaluation, University of Toronto, Toronto, Ontario, Canada</span></li>
+  </ol>
+</section>
+
+<section aria-labelledby="h-refs">
+  <h2 id="h-refs">References</h2>
+  <ol class="refs">
+<li>Sato R, Hasegawa D, Hamahata NT, et al: The predictive value of airway occlusion pressure at 100 msec (P0.1) on successful weaning from mechanical ventilation: A systematic review and meta-analysis. <em>Journal of critical care</em> 2021; 63:124–132</li>
+<li>Whitelaw WA, Derenne JP, Milic-Emili J: Occlusion pressure as a measure of respiratory center output in conscious man. <em>Respir Physiol</em> 1975; 23(2):181–199</li>
+<li>Mauri T, Spinelli E, Pavlovsky B, et al: Respiratory Drive in Patients with Sepsis and Septic Shock: Modulation by High-flow Nasal Cannula. <em>Anesthesiology</em> 2021; 135(6):1066–1075</li>
+<li>Telias I, Junhasavasdikul D, Rittayamai N, et al: Airway Occlusion Pressure As an Estimate of Respiratory Drive and Inspiratory Effort during Assisted Ventilation. <em>American journal of respiratory and critical care medicine</em> 2020; 201(9):1086–1098</li>
+<li>Vaporidi K, Akoumianaki E, Telias I, et al: Respiratory Drive in Critically Ill Patients. Pathophysiology and Clinical Implications. <em>American journal of respiratory and critical care medicine</em> 2020; 201(1):20–32</li>
+<li>Le Marec J, Hajage D, Decavèle M, et al: High Airway Occlusion Pressure Is Associated with Dyspnea and Increased Mortality in Critically Ill Mechanically Ventilated Patients. <em>American journal of respiratory and critical care medicine</em> 2024; 210(2):201–210</li>
+<li>ter Haar EAMD, Renes MH, Zijlstra HW, et al: Association of P0.1 With Duration of Ventilation and Mortality in Patients With COVID-19 ARDS. <em>CHEST Critical Care</em> 2025; 3(1)</li>
+<li>Rudolph MW, Sietses M, Koopman AA, et al: Airway Occlusion Pressure and P0.1 to Estimate Inspiratory Effort and Respiratory Drive in Ventilated Children. <em>Pediatric critical care medicine : a journal of the Society of Critical Care Medicine and the World Federation of Pediatric Intensive and Critical Care Societies</em> 2025; 26(4):e498–e506</li>
+<li>Ito Y, Herrera MG, Hotz JC, et al: Estimation of inspiratory effort using airway occlusion maneuvers in ventilated children: a secondary analysis of an ongoing randomized trial testing a lung and diaphragm protective ventilation strategy. <em>Critical care</em> 2023; 27(1):466</li>
+<li>Vedrenne-Cloquet M, Ito Y, Hotz J, et al: Phenotypes based on respiratory drive and effort to identify the risk factors when P0.1 fails to estimate ∆PES in ventilated children. <em>Critical care</em> 2024; 28(1):325</li>
+<li>Georgopoulos D, Bolaki M, Stamatopoulou V, et al: Respiratory drive: a journey from health to disease. <em>J Intensive Care</em> 2024; 12(1):15</li>
+<li>Zhang J, Feng J, Jia J, et al: Research progress on the pathogenesis and treatment of ventilator-induced diaphragm dysfunction. <em>Heliyon</em> 2023; 9(11):e22317</li>
+<li>Goligher EC, Dres M, Patel BK, et al: Lung- and Diaphragm-Protective Ventilation. <em>American journal of respiratory and critical care medicine</em> 2020; 202(7):950–961</li>
+<li>Hrdy O, Vrbica K, Kovar M, et al: Incidence of muscle wasting in the critically ill: a prospective observational cohort study. <em>Sci Rep</em> 2023; 13(1):742</li>
+<li>Ong C, Lee JH, Puthucheary ZA: Muscle weakness and wasting in pediatric critical illness. <em>Pediatric Medicine</em> 2021; 4</li>
+<li>Mtaweh H, Fuerte K, DeLorenzo S, et al: An exploratory prospective observational study of muscle cross-sectional area changes and energy balance in critically ill children: avoiding negative energy balance is necessary but not sufficient to maintain muscle mass in critically ill children. <em>Intensive Care Medicine – Paediatric and Neonatal</em> 2025; 3(1):4</li>
+<li>Schefold JC, Wollersheim T, Grunow JJ, et al: Muscular weakness and muscle wasting in the critically ill. <em>J Cachexia Sarcopenia Muscle</em> 2020; 11(6):1399–1412</li>
+<li>Goligher EC, Brochard LJ, Reid WD, et al: Diaphragmatic myotrauma: a mediator of prolonged ventilation and poor patient outcomes in acute respiratory failure. <em>Lancet Respir Med</em> 2019; 7(1):90–98</li>
+<li>Fazzini B, Markl T, Costas C, et al: The rate and assessment of muscle wasting during critical illness: a systematic review and meta-analysis. <em>Critical care</em> 2023; 27(1):2</li>
+<li>Leteurtre S, Martinot A, Duhamel A, et al: Validation of the paediatric logistic organ dysfunction (PELOD) score: prospective, observational, multicentre study. <em>Lancet</em> 2003; 362(9379):192–197</li>
+<li>Mtaweh H, Tuira L, Floh AA, et al: Indirect Calorimetry: History, Technology, and Application. <em>Front Pediatr</em> 2018; 6:257</li>
+<li>R Core Team: R: A Language and Environment for Statistical Computing. 4.5.2 ed. R Foundation for Statistical Computing, Vienna, Austria, 2025</li>
+<li>Perrigault PF, Pouzeratte YH, Jaber S, et al: Changes in occlusion pressure (P0.1) and breathing pattern during pressure support ventilation. <em>Thorax</em> 1999; 54(2):119–123</li>
+<li>Tobin MJ, Jubran A, Laghi F: Patient-ventilator interaction. <em>American journal of respiratory and critical care medicine</em> 2001; 163(5):1059–1063</li>
+<li>Ong C, Lee JH, Leow MKS, et al: Muscle Ultrasound Changes and Physical Function of Critically Ill Children: A Comparison of Rectus Femoris Cross-Sectional Area and Quadriceps Thickness Measurements. <em>Crit Care Explor</em> 2023; 5(6):e0937</li>
+<li>Pesenti A, Rossi N, Calori A, et al: Effects of short-term oxygenation changes on acute lung injury patients undergoing pressure support ventilation. <em>Chest</em> 1993; 103(4):1185–1189</li>
+<li>Beloncle F, Piquilloud L, Olivier P-Y, et al: Accuracy of P0.1 measurements performed by ICU ventilators: a bench study. <em>Annals of intensive care</em> 2019; 9(1):104</li>
+<li>Carteaux G, Coudroy R: Monitoring effort and respiratory drive in patients with acute respiratory failure. <em>Current opinion in critical care</em> 2025; 31(3):302–311</li>
+<li>Rodriguez Guerineau L, Vieira F, Rodrigues A, et al: Airway opening pressure maneuver to detect airway closure in mechanically ventilated pediatric patients. <em>Frontiers in Pediatrics</em> 2024; Volume 12 - 2024</li>
+<li>Magder S: Bench-to-bedside review: ventilatory abnormalities in sepsis. <em>Critical care</em> 2009; 13(1):202</li>
+  </ol>
+</section>
+
+</div>
+</body>
+</html>
